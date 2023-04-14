@@ -1,5 +1,5 @@
 //your JS code here. If required.
-var string = "aabbcedd";
+let string = prompt("Enter a string:");
 function firstNonRepeatedCharacter(string) {
    
 for (let i = 0; i < string.length; i++) {
@@ -10,6 +10,6 @@ console.log(character);
 }
 
 }
-firstNonRepeatedCharacter("aabbcdd");
+firstNonRepeatedCharacter(string); 
 
 
