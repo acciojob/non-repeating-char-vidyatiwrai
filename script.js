@@ -1,4 +1,4 @@
-//yfunction firstNonRepeatedChar(str) {
+function firstNonRepeatedChar(str) {
   const charCounts = new Map(); 
 for (const char of str) {
     charCounts.set(char, (charCounts.get(char) || 0) + 1);
