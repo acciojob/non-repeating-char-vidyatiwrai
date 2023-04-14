@@ -1,10 +1,13 @@
 //your JS code here. If required.
 
-
 function firstNonRepeatedCharacter(string) {
-    return string.split('').filter(function (character, index, obj) {
-        return obj.indexOf(character) === obj.lastIndexOf(character);
-    }).shift();
+for (let i = 0; i < string.length; i++) {
+let character = string.charAt(i);
+if (string.indexOf(character) === i && string.indexOf(character, i + 1) === -1) {
+return character;
+}
+}
+return null;
 }
 
-console.log(firstNonRepeatedCharacter('aabcbd'));
+
